@@ -22,3 +22,8 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.row .control-label.required:after {
+    content:"*";
+    color:red;
+}

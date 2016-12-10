@@ -3,29 +3,105 @@
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>Rolodex</h1>
+    <p>Basic rolodex for inputing contacts into a database.</p>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<form role="form" method="post">
+    <div class="row">
+        <hr />
+        <label class="control-label required col-lg-2" for="inputFirstName">First Name</label>
+        <input type="text" class="form-control col-lg-4" id="inputFirstName" placeholder="Enter first name" required />
+        <label class="control-label required col-lg-2" for="inputLastName">Last Name</label>
+        <input type="text" class="form-control col-lg-4" id="inputLastName" placeholder="Enter last name" required />
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <div class="row">
+        <label class="control-label required col-lg-2" for="inputEmail">Email address</label>
+        <input type="email" class="form-control col-lg-4" id="inputEmail" placeholder="Enter email" required />
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="row">
+        <hr />
+        <label class="control-label required col-lg-2" for="inputAddress">Address</label>
+        <input type="text" class="form-control col-lg-4" id="inputAddress" placeholder="Enter Street Address" required />
+        <label class="control-label required col-lg-2" for="inputCity">City</label>
+        <input type="text" class="form-control col-lg-4" id="inputCity" placeholder="Enter City" required />
     </div>
-</div>
+    <div class="row">
+        <label class="control-label required col-lg-2" for="inputState">State</label>
+        <select class="form-control col-lg-4" id="inputState" required>
+            <option value="AL">AL</option>
+            <option value="AK">AK</option>
+            <option value="AZ">AZ</option>
+            <option value="AR">AR</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DE">DE</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="IA">IA</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="ME">ME</option>
+            <option value="MD">MD</option>
+            <option value="MA">MA</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MS">MS</option>
+            <option value="MO">MO</option>
+            <option value="MT">MT</option>
+            <option value="NE">NE</option>
+            <option value="NV">NV</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NY">NY</option>
+            <option value="NC">NC</option>
+            <option value="ND">ND</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VT">VT</option>
+            <option value="VA">VA</option>
+            <option value="WA">WA</option>
+            <option value="WV">WV</option>
+            <option value="WI">WI</option>
+            <option value="WY">WY</option>
+        </select>
+        <label class="control-label required col-lg-2" for="inputZip">Zipcode</label>
+        <input type="text" class="form-control col-lg-4" id="inputZip" placeholder="Enter Zipcode" pattern="^\d{5}$" required />
+    </div>
+    <div class="row">
+        <hr />
+        <label class="control-label col-lg-2" for="inputHomePhone">Home Phone</label>
+        <input type="tel" class="form-control col-lg-4" id="inputHomePhone" placeholder="1234567890" />
+        <label class="control-label col-lg-2" for="inputCellPhone">Cell Phone</label>
+        <input type="tel" class="form-control col-lg-4" id="inputCellPhone" placeholder="1234567890" />
+    </div>
+    <div class="row">
+        <label class="control-label col-lg-2" for="inputWorkPhone">Work Phone</label>
+        <input type="tel" class="form-control col-lg-4" id="inputWorkPhone" placeholder="1234567890" />
+    </div>
+    <div class="row">
+        <hr />
+        <label class="control-label col-lg-2" for="inputNotes">Notes</label>
+        <textarea class="form-control col-lg-10" id="inputNotes" rows="5"></textarea>
+    </div>
+    <div class="row">
+        <hr />
+        <button type="submit" class="btn btn-success col-lg-2">Submit</button>
+        <button type="reset" class="btn btn-danger col-lg-2">Reset</button>
+    </div>
+</form>
